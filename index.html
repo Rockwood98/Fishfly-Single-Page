@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/be762c7b31.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <title>Fishfly</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" alt="Fishfly logo" class="logo">Fish<span>fly</span></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link">How to start</a></li>
+          <li><a href="#" class="main-nav-link">Fishing rods</a></li>
+          <li><a href="#" class="main-nav-link">Fishing grounds</a></li>
+          <li><a href="#" class="main-nav-link">Baits</a></li>
+          <li>
+            <a href="#" class="main-nav-link btn btn-acc">Join us!</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <i class="icon-mobile-nav open fa-solid fa-bars"></i>
+        <i class="icon-mobile-nav close fa-solid fa-xmark hidden"></i>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">A one single page about Fishing!</h1>
+            <p class="hero-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              sapiente corrupti iusto maiores officiis aspernatur, harum
+              expedita modi provident, commodi quasi! Ab facere neque
+              accusantium voluptatibus? Quae vitae voluptates hic!
+            </p>
+            <a href="" class="btn btn--start margin-right-sm">Start fishing</a>
+            <a href="" class="btn btn--outline"
+              >Learn more <i class="fa-solid fa-arrow-down"></i
+            ></a>
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="./src/img/header-logo.png"
+              alt="Three photos about fishing"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-how" id="section-1">
+        <div class="container">
+          <span class="subheading">How to start</span>
+          <h2 class="heading-secondary">
+            There is a some basic steps about fishing and how to start:
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols">
+          <!-- STEP 01 -->
+          <div class="text-box step-slide">
+            <h3 class="heading-tertiary">
+              Learn the Basics and obtain the Necessary Gear:
+            </h3>
+            <p class="description-how">
+              Familiarize yourself with the fundamentals of fishing, such as
+              different types of fishing rods, reels, lines, hooks, and baits.
+              Understand basic fishing techniques and terminology. Purchase or
+              borrow the essential fishing equipment based on the type of
+              fishing you plan to do. This includes a fishing rod and reel,
+              fishing line, hooks, sinkers, and appropriate bait or lures.
+            </p>
+          </div>
+          <div class="img-box">
+            <img class="how-img" src="./src/img/gear.jpg" alt="Fishing bites" />
+          </div>
+          <!-- STEP 02 -->
+          <div class="img-box">
+            <img class="how-img" src="./src/img/spot.jpg" alt="Fishing bites" />
+          </div>
+          <div class="text-box">
+            <h3 class="heading-tertiary">
+              Research Fishing Spots and learn Local Fishing Regulations:
+            </h3>
+            <p class="description-how">
+              Identify suitable fishing locations in your area. Look for rivers,
+              lakes, ponds, or coastal areas known for their fish populations.
+              Check local regulations regarding fishing licenses or permits that
+              may be required. Learn Local Fishing Regulations: Familiarize
+              yourself with the fishing regulations and seasons in your area.
+              Understand the catch limits, size restrictions, and any specific
+              rules that apply to the fish species you intend to target.
+            </p>
+          </div>
+          <!-- STEP 03 -->
+          <div class="text-box">
+            <h3 class="heading-tertiary">
+              Practice Casting and Knot Tying with Basic Techniques:
+            </h3>
+            <p class="description-how">
+              Spend time practicing your casting technique to improve accuracy
+              and distance. Additionally, learn to tie strong and reliable knots
+              to secure your hooks, lures, and other tackle. Begin with simple
+              fishing techniques, such as bait fishing or casting with lures.
+              Experiment with different bait types and techniques to see what
+              works best for the fish species in your chosen location.
+            </p>
+          </div>
+          <div class="img-box">
+            <img
+              class="how-img"
+              src="./src/img/baits.jpg"
+              alt="Fishing bites"
+            />
+          </div>
+          <!-- STEP 04 -->
+          <div class="img-box">
+            <img
+              class="how-img"
+              src="./src/img/patient.jpg"
+              alt="Fishing bites"
+            />
+          </div>
+          <div class="text-box">
+            <h3 class="heading-tertiary">Be Patient and Observant:</h3>
+            <p class="description-how">
+              Fishing requires patience. Spend time observing the water, looking
+              for signs of fish activity such as ripples, splashes, or jumping
+              fish. Pay attention to weather conditions and the behavior of
+              other anglers to increase your chances of success. Remember,
+              fishing is not only about catching fish but also about enjoying
+              the experience and being in nature. Have fun, respect the
+              environment, and always practice proper catch-and-release
+              techniques when necessary.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-fishing" id="section-2">
+        <div class="container text-center">
+          <span class="subheading">Fishing rods</span>
+          <h2 class="heading-secondary margin-bottom-sm">
+            Here are some common types of fishing rods:
+          </h2>
+        </div>
+        <div class="fishing-tabs container">
+          <div class="fishing-tab-container">
+            <button
+              class="btn-fish fishing_tab fishing_tab--1 fishing_tab--active"
+              data-tab="1"
+            >
+              <span class="tab-num">01 </span>Spinning Rod:
+            </button>
+            <button class="btn-fish fishing_tab fishing_tab--1" data-tab="2">
+              <span class="tab-num">02 </span>Casting Rod
+            </button>
+            <button class="btn-fish fishing_tab fishing_tab--1" data-tab="3">
+              <span class="tab-num">03 </span>Fly Rod
+            </button>
+            <button class="btn-fish fishing_tab fishing_tab--1" data-tab="4">
+              <span class="tab-num">04 </span>Surf Rod
+            </button>
+            <button class="btn-fish fishing_tab fishing_tab--1" data-tab="5">
+              <span class="tab-num">05 </span>Telescopic Rod:
+            </button>
+            <button class="btn-fish fishing_tab fishing_tab--1" data-tab="6">
+              <span class="tab-num">06 </span>Ice Fishing Rod
+            </button>
+            <!-- <button class="btn fishing_tab fishing_tab--1" data-tab="1">
+              <span class="tab-num">07</span>Summary
+            </button> -->
+          </div>
+          <div
+            class="fishing_content fishing_content--1 fishing_content--active"
+          >
+            <h5 class="heading-h5 heading-tabs">
+              This type of rod is versatile and suitable for various fishing
+              techniques.
+            </h5>
+            <p class="fishing_text_box">
+              It features a reel mounted on the underside of the rod, allowing
+              for easy casting and retrieving. Spinning rods are commonly used
+              for freshwater fishing and can handle a wide range of fish sizes.
+            </p>
+          </div>
+          <div class="fishing_content fishing_content--2">
+            <h5 class="heading-tabs">
+              Casting rods are designed for accuracy and precision.
+            </h5>
+            <p class="fishing_text_box">
+              They feature a trigger grip and are paired with baitcasting reels.
+              These rods excel in techniques that require precise lure
+              placement, such as bass fishing or heavy cover fishing.
+            </p>
+            <div class="fishing_content fishing_content--3">
+              <h5 class="heading-tabs">Fly rods are used for fly fishing.</h5>
+              <p class="fishing_text_box">
+                Technique where artificial flies are presented to fish on the
+                water's surface or underwater. Fly rods are long and flexible,
+                typically made of lightweight materials like graphite or
+                fiberglass, and are designed to cast weighted fly lines.
+              </p>
+            </div>
+            <div class="fishing_content fishing_content--4">
+              <h5 class="heading-tabs">
+                Designed for fishing in saltwater surf conditions
+              </h5>
+              <p class="fishing_text_box">
+                Surf rods are long and they have the length to allow for
+                long-distance casting and the strength to handle heavy tackle
+                and large fish that inhabit the surf zone.
+              </p>
+            </div>
+            <div class="fishing_content fishing_content--5">
+              <h5 class="heading-tabs">
+                Telescopic rods are collapsible and compact, making them
+                convenient for travel or storage.
+              </h5>
+              <p class="fishing_text_box">
+                These rods have sections that collapse into one another,
+                allowing for easy transportation. They come in various styles,
+                such as spinning, casting, or fly rods.
+              </p>
+            </div>
+            <div class="fishing_content fishing_content--6">
+              <h5 class="heading-tabs">
+                Ice fishing rods are shorter and more rigid than traditional
+                rods.
+              </h5>
+              <p class="fishing_text_box">
+                They are designed for fishing through holes drilled in frozen
+                lakes or rivers. Ice fishing rods often have sensitive tips to
+                detect subtle bites in cold water conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-fishing-grounds" id="section-3">
+        <div class="container">
+          <span class="subheading">Fishing grounds</span>
+          <h2 class="heading-secondary">
+            Angler's Haven: Exploring Fishing Paradises:
+          </h2>
+        </div>
+        <div class="slider">
+          <div class="slide slide--1">
+            <div class="fishing_grounds">
+              <h5 class="heading-slider heading-h5 margin-bottom-md">
+                Freshwater Fishing
+              </h5>
+              <blockquote class="fishing_text_box fishing_grounds-text">
+                River and Lake Fishing: For catching various freshwater fish
+                species like pike, perch, bream, or carp, popular choices are
+                spinning rods or casting rods. Stream and Creek Fishing: Light
+                spinning rods or lightweight fly rods are often used for precise
+                fishing in fast-flowing streams, targeting trout or grayling.
+              </blockquote>
+            </div>
+          </div>
+          <div class="slide slide--2">
+            <div class="fishing_grounds">
+              <h5 class="heading-slider heading-h5 margin-bottom-md">
+                Saltwater Fishing
+              </h5>
+              <blockquote class="fishing_text_box fishing_grounds-text">
+                Shoreline saltwater fishing often requires longer and sturdier
+                rods, such as surf rods, which allow for long-distance casting
+                and handling larger fish like cod, flounder, or sea bass.<br />Boat
+                Fishing: Specialized boat rods with strong guides and greater
+                lifting power are commonly used for catching larger marine fish
+                species like tuna, mackerel, or cod from a boat.
+              </blockquote>
+            </div>
+          </div>
+          <div class="slide slide--3">
+            <div class="fishing_grounds">
+              <h5 class="heading-slider heading-h5 margin-bottom-md">
+                Summary
+              </h5>
+              <blockquote class="fishing_text_box fishing_grounds-text">
+                Please note that these are general guidelines, and the choice of
+                fishing rod ultimately depends on your preferences, local
+                conditions, and the specifics of your fishing goals. If you're a
+                beginner, it's advisable to consult local experts or experienced
+                anglers who can provide more specific recommendations for your
+                particular location and fishing objectives.
+              </blockquote>
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--left">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="slider__btn slider__btn--right">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="section-baits" id="section-4">
+        <div class="container">
+          <span class="subheading">Baits</span>
+          <h2 class="heading-secondary">
+            Various types of fishing lures and baits used to attract fish:
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols">
+          <div class="baits">
+            <img
+              src="./src/img/bait-soft.jpg"
+              class="bait-img"
+              alt="Soft plastic baits"
+            />
+            <div class="baits-content">
+              <div class="baits-tags">
+                <span class="tag tag--aggressive">Aggressive</span>
+                <span class="tag tag--peaceful">Peaceful</span>
+              </div>
+              <p class="baits-title">Soft Plastic Baits</p>
+              <ul class="baits-attributes">
+                <li class="bait-attribute">
+                  <i class="icon-bait fa-solid fa-wave-square"></i>
+                  <span>Flexible</span>
+                </li>
+                <li class="bait-attribute">
+                  <i class="icon-bait fa-solid fa-worm"></i>
+                  <span>worms, grubs, creature baits</span>
+                </li>
+                <li class="bait-attribute">
+                  <i class="icon-bait fa-solid fa-fish"></i>
+                  <span>bass, walleye, or pike</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="baits">
+            <img
+              src="./src/img/wobler.jpg"
+              class="bait-img"
+              alt="Soft plastic baits"
+            />
+            <div class="baits-content">
+              <div class="baits-tags">
+                <span class="tag tag--aggressive">Aggressive</span>
+              </div>
+              <p class="baits-title">Crankbaits</p>
+              <ul class="baits-attributes">
+                <li class="bait-attribute">
+                  <i class="icon-bait fa-solid fa-wave-square"></i>
+                  <span>Hard-bodied</span>
+                </li>
+                <li class="bait-attribute">
+                  <i class="icon-bait fa-solid fa-worm"></i>
+                  <span>Imitate swimming fish</span>
+                </li>
+                <li class="bait-attribute">
+                  <i class="icon-bait fa-solid fa-fish"></i>
+                  <span>bass, pike, or musky</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="baits">
+            <img
+              src="./src/img/spinner.jpg"
+              class="bait-img"
+              alt="Soft plastic baits"
+            />
+            <div class="baits-content">
+              <div class="baits-tags">
+                <span class="tag tag--aggressive">Aggressive</span>
+              </div>
+              <p class="baits-title">Spinnerbaits</p>
+              <ul class="baits-attributes">
+                <li class="bait-attribute">
+                  <i class="icon-bait fa-solid fa-wave-square"></i>
+                  <span>metal blades</span>
+                </li>
+                <li class="bait-attribute">
+                  <i class="icon-bait fa-solid fa-worm"></i>
+                  <span>Creating flash and vibration</span>
+                </li>
+                <li class="bait-attribute">
+                  <i class="icon-bait fa-solid fa-fish"></i>
+                  <span>bass, pike, or walleye</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container all-recipes">
+          <a href="#" class="link"
+            >See all baits<i class="btn-link fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-desc">
+          <p class="footer-description">
+            The ultimate website for anglers, providing all the resources and
+            information needed for a successful fishing experience.
+          </p>
+          <a href="#" class="footer-btn btn">Join the newsletter</a>
+        </div>
+        <div class="footer-copyright">
+          <a href="#" alt="Fishfly logo" class="logo">Fish<span>fly</span></a>
+          <p class="copy">
+            &copy; Copyright by <span class="copy-sp">Wojciech Charemski</span>
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
