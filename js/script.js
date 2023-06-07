@@ -3,6 +3,7 @@ const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelectorAll(".btn--close");
 const btnOpenModal = document.querySelectorAll(".btn--active");
 const cancel = document.querySelector(".cancel");
+const btnOpenNav = document.querySelector(".nav-open-btn");
 
 // MODAL WINDOW
 const openModal = function (e) {
@@ -29,3 +30,15 @@ document.addEventListener("keydown", function (e) {
 });
 
 ///////////////////////////
+// Navigation
+
+btnOpenNav.addEventListener("click", function () {
+  document.querySelector(".main-nav").classList.toggle("nav-open");
+  if (btnOpenNav.classList.contains("fa-bars")) {
+    btnOpenNav.classList.remove("fa-bars");
+    btnOpenNav.classList.add("fa-xmark");
+  } else {
+    btnOpenNav.classList.add("fa-bars");
+    btnOpenNav.classList.remove("fa-xmark");
+  }
+});
