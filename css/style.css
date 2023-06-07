@@ -383,7 +383,7 @@
   gap: 2rem;
   top: 50%;
   left: 50%;
-  width: 55rem;
+  max-width: 55rem;
   transform: translate(-50%, -50%);
   color: #333;
   background-color: #f3f3f3;
