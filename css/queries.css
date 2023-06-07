@@ -155,6 +155,12 @@
   .modal {
     width: 60rem;
   }
+  .fishing_grounds-text {
+    font-size: 1.8rem;
+  }
+  .heading-h5.heading-slider {
+    font-size: 2.4rem;
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */

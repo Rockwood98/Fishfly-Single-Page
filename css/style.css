@@ -172,6 +172,7 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  border-radius: 11px;
 }
 .slide {
   display: flex;
@@ -186,7 +187,6 @@
   background-repeat: no-repeat;
   /* THIS creates the animation! */
   transition: transform 1s;
-  border-radius: 20px;
 }
 .slide--1 {
   background-image: url(../src/img/jezioro.jpg);
@@ -197,16 +197,22 @@
 .slide--3 {
   background-image: url(../src/img/summary.jpg);
 }
-.slider::before {
+.slide--1::before,
+.slide--2::before,
+.slide--3::before {
   content: "";
   display: block;
   margin: 0 auto;
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.85);
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
   z-index: 2;
 }
+
 .slider__btn {
   position: absolute;
   top: 50%;
@@ -233,7 +239,8 @@
 .fishing_grounds {
   width: 65%;
   position: relative;
-  z-index: 5;
+  z-index: 1000;
+  color: #fff;
 }
 
 .fishing_grounds-text {
@@ -242,8 +249,9 @@
   font-size: 2rem;
   font-weight: 400;
 }
-.heading-slider {
-  font-size: 4rem;
+.heading-h5.heading-slider {
+  font-size: 3rem;
+  color: #fff;
 }
 /**************************/
 /* BAITS-SECTION */
