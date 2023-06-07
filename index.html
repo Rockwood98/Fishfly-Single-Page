@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/be762c7b31.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="js/script.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/queries.css" />
@@ -23,7 +24,9 @@
           <li><a href="#" class="main-nav-link">Fishing grounds</a></li>
           <li><a href="#" class="main-nav-link">Baits</a></li>
           <li>
-            <a href="#" class="main-nav-link btn btn-acc">Join us!</a>
+            <button class="main-nav-link btn btn-acc btn--active">
+              Join us!
+            </button>
           </li>
         </ul>
       </nav>
@@ -43,7 +46,9 @@
               expedita modi provident, commodi quasi! Ab facere neque
               accusantium voluptatibus? Quae vitae voluptates hic!
             </p>
-            <a href="" class="btn btn--start margin-right-sm">Start fishing</a>
+            <a href="" class="btn btn--start margin-right-sm btn--active"
+              >Start fishing</a
+            >
             <a href="" class="btn btn--outline"
               >Learn more <i class="fa-solid fa-arrow-down"></i
             ></a>
@@ -408,7 +413,7 @@
             The ultimate website for anglers, providing all the resources and
             information needed for a successful fishing experience.
           </p>
-          <a href="#" class="footer-btn btn">Join the newsletter</a>
+          <a href="#" class="footer-btn btn btn--active">Join the newsletter</a>
         </div>
         <div class="footer-copyright">
           <a href="#" alt="Fishfly logo" class="logo">Fish<span>fly</span></a>
@@ -418,5 +423,24 @@
         </div>
       </footer>
     </main>
+    <div class="modal hidden">
+      <button class="btn--close-modal btn--close">
+        <i class="icon-close-modal fa-solid fa-xmark"></i>
+      </button>
+      <a href="#" alt="Fishfly logo" class="logo modal-logo"
+        >Fish<span>fly</span></a
+      >
+      <h2 class="modal--header">Join our newsletter</h2>
+      <p class="modal--description">
+        Subscribe our newsletter to receive the latest news and exclusive offers
+        every week. No spam.
+      </p>
+      <form class="modal--form">
+        <input type="email" placeholder="Enter your email" class="email" />
+        <button class="btn-modal">SUBSCRIBE</button>
+        <p class="cancel btn--close">No thanks</p>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>

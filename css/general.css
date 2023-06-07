@@ -113,11 +113,14 @@ body {
   color: #333;
   font-weight: 600;
   transition: 0.3s;
+  cursor: pointer;
 }
 .btn--start,
 .btn-acc {
   background-color: #4dabf7;
   color: #fff;
+  font-family: inherit;
+  border: none;
 }
 .btn--outline {
   box-shadow: inset 0 0 0 3px #fff;
