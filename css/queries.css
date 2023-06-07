@@ -103,7 +103,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 70%;
     height: 100vh;
     transform: translateX(100%);
     display: flex;
