@@ -4,6 +4,7 @@ const btnCloseModal = document.querySelectorAll(".btn--close");
 const btnOpenModal = document.querySelectorAll(".btn--active");
 const cancel = document.querySelector(".cancel");
 const btnOpenNav = document.querySelector(".nav-open-btn");
+const mainNavLink = document.querySelectorAll(".main-nav-link");
 
 // MODAL WINDOW
 const openModal = function (e) {
@@ -32,7 +33,7 @@ document.addEventListener("keydown", function (e) {
 ///////////////////////////
 // Navigation
 
-btnOpenNav.addEventListener("click", function () {
+btnOpenNav.addEventListener("click", function (e) {
   document.querySelector(".main-nav").classList.toggle("nav-open");
   if (btnOpenNav.classList.contains("fa-bars")) {
     btnOpenNav.classList.remove("fa-bars");
@@ -41,4 +42,9 @@ btnOpenNav.addEventListener("click", function () {
     btnOpenNav.classList.add("fa-bars");
     btnOpenNav.classList.remove("fa-xmark");
   }
+});
+mainNavLink.forEach((link) => {
+  link.addEventListener("click", function () {
+    document.querySelector(".main-nav").classList.remove("nav-open");
+  });
 });
