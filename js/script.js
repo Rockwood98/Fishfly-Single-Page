@@ -46,5 +46,20 @@ btnOpenNav.addEventListener("click", function (e) {
 mainNavLink.forEach((link) => {
   link.addEventListener("click", function () {
     document.querySelector(".main-nav").classList.remove("nav-open");
+    btnOpenNav.classList.add("fa-bars");
+    btnOpenNav.classList.remove("fa-xmark");
   });
 });
+
+document
+  .querySelector(".main-nav-list")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    if (
+      e.target.classList.contains("main-nav-link") &&
+      !e.target.classList.contains("btn")
+    ) {
+      const id = e.target.getAttribute("href");
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  });
