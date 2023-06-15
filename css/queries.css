@@ -215,7 +215,13 @@
   }
   .slider,
   .slide {
-    height: 75rem;
+    height: 55rem;
+  }
+  .fishing_text_box {
+    font-size: 1.6rem;
+  }
+  .slider {
+    width: 90%;
   }
   .baits {
     margin: 0 auto 3.2rem;
