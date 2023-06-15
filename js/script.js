@@ -5,6 +5,9 @@ const btnOpenModal = document.querySelectorAll(".btn--active");
 const cancel = document.querySelector(".cancel");
 const btnOpenNav = document.querySelector(".nav-open-btn");
 const mainNavLink = document.querySelectorAll(".main-nav-link");
+const btnTab = document.querySelectorAll(".btn-fish");
+const tabsContainer = document.querySelector(".fishing-tab-container");
+const tabsContent = document.querySelectorAll(".fishing_content");
 
 // MODAL WINDOW
 const openModal = function (e) {
@@ -35,13 +38,9 @@ document.addEventListener("keydown", function (e) {
 
 btnOpenNav.addEventListener("click", function (e) {
   document.querySelector(".main-nav").classList.toggle("nav-open");
-  if (btnOpenNav.classList.contains("fa-bars")) {
-    btnOpenNav.classList.remove("fa-bars");
-    btnOpenNav.classList.add("fa-xmark");
-  } else {
-    btnOpenNav.classList.add("fa-bars");
-    btnOpenNav.classList.remove("fa-xmark");
-  }
+  if (!btnOpenNav.classList.contains("fa-bars"))
+    btnOpenNav.classList.toggle("fa-xmark");
+  else btnOpenNav.classList.toggle("fa-xmark");
 });
 mainNavLink.forEach((link) => {
   link.addEventListener("click", function () {
@@ -66,9 +65,6 @@ document
 
 //////////////////////////////
 //TABS
-const btnTab = document.querySelectorAll(".btn-fish");
-const tabsContainer = document.querySelector(".fishing-tab-container");
-const tabsContent = document.querySelectorAll(".fishing_content");
 
 tabsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".btn-fish");
