@@ -72,13 +72,16 @@ const slider = function () {
   const btnRight = document.querySelector(".slider__btn--right");
   const maxSlide = slides.length;
   let curSlide = 0;
+  let time = 5000;
+  let intervalId;
 
+  // Changing slide
   const goToSlide = function (slide) {
     slides.forEach(
       (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
     );
   };
-
+  //Next slide
   const nextSlide = function () {
     if (curSlide === maxSlide - 1) {
       curSlide = 0;
@@ -87,7 +90,7 @@ const slider = function () {
     }
     goToSlide(curSlide);
   };
-
+  //Previous slide
   const prevSlide = function () {
     if (curSlide === 0) {
       curSlide = maxSlide - 1;
@@ -96,8 +99,25 @@ const slider = function () {
     }
     goToSlide(curSlide);
   };
+  //Time slide
+  function slideIntervalStart() {
+    intervalId = setInterval(() => {
+      nextSlide();
+    }, time);
+  }
+  function slideIntervalStop() {
+    clearInterval(intervalId);
+  }
+  document
+    .querySelector(".slider")
+    .addEventListener("mouseover", slideIntervalStop);
+  document
+    .querySelector(".slider")
+    .addEventListener("mouseout", slideIntervalStart);
+
   const init = function () {
     goToSlide(0);
+    slideIntervalStart();
   };
   init();
   btnRight.addEventListener("click", nextSlide);
