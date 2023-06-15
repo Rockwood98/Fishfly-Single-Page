@@ -136,11 +136,11 @@
 }
 .fishing_content {
   display: none;
+  padding: 5.2rem 2.8rem;
+  transform: translateY(-10%);
 }
 .fishing_content--active {
   display: block;
-  padding: 5.2rem 2.8rem;
-  transform: translateY(-10%);
 }
 .btn-fish {
   font-size: 2rem;

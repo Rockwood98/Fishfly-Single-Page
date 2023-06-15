@@ -64,6 +64,30 @@ document
     }
   });
 
+//////////////////////////////
+//TABS
+const btnTab = document.querySelectorAll(".btn-fish");
+const tabsContainer = document.querySelector(".fishing-tab-container");
+const tabsContent = document.querySelectorAll(".fishing_content");
+
+tabsContainer.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".btn-fish");
+  if (!clicked) return;
+  //Remove active class
+  btnTab.forEach((btn) => btn.classList.remove("fishing_tab--active"));
+  tabsContent.forEach((content) =>
+    content.classList.remove("fishing_content--active")
+  );
+  //Add active class
+  clicked.classList.add("fishing_tab--active");
+  //Add content area
+  document
+    .querySelector(`.fishing_content--${clicked.dataset.tab}`)
+    .classList.add("fishing_content--active");
+  console.log(clicked.dataset.tab);
+});
+
+/////////////////////////////////////
 ///Slider
 
 const slider = function () {
